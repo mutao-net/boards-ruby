@@ -24,3 +24,6 @@
 
 ## routes
 - http://localhost:3000/rails/info/routes
+
+## seeds
+- docker-compose exec web bundle exec rake db:seed

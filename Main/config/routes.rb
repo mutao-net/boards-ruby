@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   # post 'boards', to: 'boards#create'
   # get 'boards/:id', to: 'boards#show'
   # onlyでパスを指定できる
-  resources :boards, only: [:index, :new, :create, :show, :edit, :update]
+  # resources :boards, only: [:index, :new, :create, :show, :edit, :update]
+  resources :boards
 end
