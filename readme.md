@@ -27,3 +27,14 @@
 
 ## seeds
 - docker-compose exec web bundle exec rake db:seed
+
+## annotate
+- annotateをつける
+- docker-compose exec web bundle exec annotate
+
+- migrate時に自動でannotateがつくように
+- docker-compose exec web bundle exec rails g annotate:install
+
+## migrate
+- 外部テーブルとの紐付け
+- docker-compose run web bundle exec rails g model comment board:references name:strng commnet:text
